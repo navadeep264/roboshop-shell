@@ -13,7 +13,7 @@ cd /app
 npm install
 
 dnf install mongodb-mongosh -y
-mongosh --host MONGODB-SERVER-IPADDRESS </app/db/master-data.js
+mongosh --host mongodb.navadeepdevops.icu </app/db/master-data.js
 
 systemctl daemon-reload
 systemctl enable catalogue
