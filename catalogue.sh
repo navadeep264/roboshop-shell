@@ -18,6 +18,7 @@ npm install
 dnf install mongodb-mongosh -y
 mongosh --host mongodb.navadeepdevops.icu </app/db/master-data.js
 
+
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl restart catalogue
