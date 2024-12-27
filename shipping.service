@@ -1,0 +1,10 @@
+[Unit]
+Description=Shipping Service
+[Service]
+User=roboshop
+Environment=CART_ENDPOINT=cart.navadeepdevops.icu:8080
+Environment=DB_HOST=mysql.navadeepdevops.icu
+ExecStart=/bin/java -jar /app/shipping.jar
+SyslogIdentifier=shipping
+[Install]
+WantedBy=multi-user.target
